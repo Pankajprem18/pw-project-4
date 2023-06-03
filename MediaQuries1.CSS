@@ -1,0 +1,68 @@
+body{
+    height: 100px;
+    background-color: aquamarine;
+}
+h1{
+    font-size : 60px;
+    text-align: center;
+}
+.Large_Laptop,
+.Laptop,
+.Tablet,
+.Mobile{
+   font-size: 45px; 
+   text-align: center;
+   display: none;
+}
+@media screen and (min-width: 0px) {
+    body{
+        background-color: crimson;
+    }
+    .Mobile{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:425px) {
+    body{
+        background-color: aqua;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    body{
+        background-color: darkgoldenrod;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet{
+        display: none;
+    } 
+    .Laptop{
+        display: block;
+    }
+}
+@media screen and (min-width:1024px) {
+    body{
+        background-color: forestgreen;
+    }
+    .Mobile{
+        display: none;
+    }
+    .Tablet{
+        display: none;
+    } 
+    .Laptop{
+        display: none;
+    }
+    .Large_Laptop{
+        display: block;
+    }
+}
